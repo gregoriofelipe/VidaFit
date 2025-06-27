@@ -27,6 +27,10 @@ git clone https://github.com/gregoriofelipe/vidafit.git
 - `index.html`: Página principal e navegação
 - `style.css`: Estilo visual e responsividade
 - `script.js`: Scripts de navegação e cálculo da TMB
+- 
+## Status
+
+   Projeto acadêmico em desenvolvimento. Novas funcionalidades e melhorias visuais podem ser implementadas.
 
 ## Autor
 
