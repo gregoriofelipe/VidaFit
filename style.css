@@ -1,0 +1,520 @@
+:root {
+    --primary: #2E8B57;
+    --secondary: #3CB371;
+    --accent: #98FB98;
+    --dark: #1A3C27;
+    --light: #F5F9F7;
+    --text: #333333;
+    --card-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--light);
+    color: var(--text);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, var(--primary), var(--dark));
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.tagline {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* NAVEGACAO */
+nav {
+    background: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav button {
+    background: none;
+    border: none;
+    color: var(--dark);
+    padding: 1.4rem 2rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: var(--transition);
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+nav button i {
+    font-size: 1.2rem;
+}
+
+nav button:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background: var(--primary);
+    transition: var(--transition);
+}
+
+nav button:hover, nav button.active {
+    color: var(--primary);
+}
+
+nav button:hover:after, nav button.active:after {
+    width: 80%;
+}
+
+/* CONTEUDO PRINCIPAL */
+main {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+}
+
+.categoria {
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+.categoria.active {
+    display: block;
+}
+
+.section-title {
+    color: var(--primary);
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 0.8rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    position: relative;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100px;
+    height: 2px;
+    background: var(--secondary);
+}
+
+/* SISTEMA DE CARDS & GRID*/
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+    transition: var(--transition);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.card-img {
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    padding: 1.8rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    color: var(--dark);
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+}
+
+.card-subtitle {
+    color: var(--secondary);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.card-text {
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.card-meta {
+    display: flex;
+    justify-content: space-between;
+    color: #777;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+
+/* SESSAO DIETA */
+.recipe-ingredients {
+    background: #f0f8f1;
+    border-radius: 8px;
+    padding: 1.2rem;
+    margin: 1.2rem 0;
+}
+
+.recipe-ingredients h4 {
+    color: var(--primary);
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* SESSAO TREINO */
+.training-program {
+    background: white;
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    overflow: hidden;
+    margin-bottom: 2.5rem;
+}
+
+.program-header {
+    background: linear-gradient(135deg, var(--dark), var(--primary));
+    color: white;
+    padding: 1.2rem 1.8rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.program-days {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 1.8rem;
+}
+
+.day {
+    background: #f8fbf8;
+    border-radius: 8px;
+    padding: 1.2rem;
+    border-left: 4px solid var(--secondary);
+}
+
+.day-title {
+    color: var(--primary);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.exercise {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 1.2rem;
+    padding-bottom: 1.2rem;
+    border-bottom: 1px solid #eee;
+}
+
+.exercise:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.exercise-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.exercise-info {
+    flex-grow: 1;
+}
+
+.exercise-name {
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.exercise-muscles {
+    color: var(--secondary);
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+}
+
+.exercise-sets {
+    display: flex;
+    gap: 8px;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* CALCULADORA TAXA BASAL */
+.tmb-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    color: var(--dark);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+input, select {
+    padding: 0.9rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+input:focus, select:focus {
+    border-color: var(--primary);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(46, 139, 87, 0.2);
+}
+
+button[type="submit"] {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: var(--transition);
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+button[type="submit"]:hover {
+    background: var(--dark);
+    transform: translateY(-3px);
+}
+
+.tmb-resultado {
+    margin-top: 2rem;
+    padding: 1.8rem;
+    background: var(--accent);
+    border-radius: 12px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--dark);
+    box-shadow: var(--card-shadow);
+}
+
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.result-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: var(--card-shadow);
+}
+
+.result-value {
+    font-size: 1.8rem;
+    color: var(--primary);
+    font-weight: 700;
+    margin: 0.5rem 0;
+}
+
+.result-label {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* COMIDAS */
+.food-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    box-shadow: var(--card-shadow);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.food-table th, .food-table td {
+    padding: 1.2rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.food-table th {
+    background: var(--primary);
+    color: white;
+    font-weight: 600;
+}
+
+.food-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.food-table tr:hover {
+    background-color: #f0f8f1;
+}
+
+.macro-cell {
+    font-weight: 600;
+    color: var(--primary);
+}
+
+/* RODA PÉ */
+footer {
+    background: var(--dark);
+    color: white;
+    text-align: center;
+    padding: 2.5rem;
+    margin-top: 4rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1.5rem 0;
+}
+
+.footer-links a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+/* ANIMACOES */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+.floating {
+    animation: float 4s ease-in-out infinite;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 900px) {
+    nav button {
+        padding: 1rem 1.2rem;
+        font-size: 1rem;
+    }
+    
+    .card-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+    
+    nav button {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .tmb-form {
+        grid-template-columns: 1fr;
+    }
+    
+    .results-grid {
+        grid-template-columns: 1fr;
+    }
+}
+

@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VidaFit - Saúde, Dieta e Treino</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1><i class="fas fa-dumbbell"></i> VidaFit</h1>
+            <p class="tagline">Para quem busca sua melhor versão</p>
+        </div>
+    </header>
+    <nav>
+        <button id="saude-btn" class="active"><i class="fas fa-heartbeat"></i> Saúde</button>
+        <button id="dieta-btn"><i class="fas fa-utensils"></i> Dieta</button>
+        <button id="treino-btn"><i class="fas fa-running"></i> Treino</button>
+        <button id="tmb-btn"><i class="fas fa-calculator"></i> Calculadora TMB</button>
+    </nav>
+    <main>
+
+        <!-- SAÚDE -->
+
+<section id="saude" class="categoria active">
+  <h2 class="section-title">Saúde</h2>
+  <div class="card-grid">
+
+    <!-- Gerenciamento de Estresse -->
+    <div class="card">
+      <img class="card-img" src="https://images.pexels.com/photos/3822622/pexels-photo-3822622.jpeg?auto=compress&w=800&q=80" alt="Meditação" />
+      <div class="card-content">
+        <h3 class="card-title">Gerenciamento de Estresse</h3>
+        <p class="card-text">
+          O estresse crônico eleva o cortisol, prejudicando ganhos musculares, imunidade e aumentando o risco de doenças cardiovasculares. Praticar 10 minutos de meditação diária usando apps como Headspace ou Calm pode reduzir significativamente a ansiedade e melhorar o foco.
+        </p>
+        <ul>
+          <li><strong>Benefícios:</strong> Reduz ansiedade, melhora foco, sono e saúde mental.</li>
+          <li><strong>Como fazer:</strong> Reserve um horário fixo, sente-se confortavelmente, foque na respiração e use áudios guiados. Experimente também caminhadas ao ar livre para aliviar a tensão.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Hidratação -->
+    <div class="card">
+      <img class="card-img" src="https://images.pexels.com/photos/1458671/pexels-photo-1458671.jpeg?auto=compress&w=800&q=80" alt="Garrafa de água" />
+      <div class="card-content">
+        <h3 class="card-title">Hidratação</h3>
+        <p class="card-text">
+          A desidratação reduz a força em até 15% e aumenta a fadiga, além de afetar a concentração e o metabolismo. Calcule sua necessidade: 35ml/kg de peso. Adicione limão ou frutas para sabor e incentive o consumo regular ao longo do dia.
+        </p>
+        <ul>
+          <li><strong>Benefícios:</strong> Melhora rendimento físico, saúde da pele, disposição e funcionamento renal.</li>
+          <li><strong>Dica:</strong> Use garrafas com marcação de quantidade para controle diário. Evite bebidas açucaradas e prefira água pura ou chás naturais.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Rotina de Sono -->
+    <div class="card">
+      <img class="card-img" src="https://images.pexels.com/photos/935777/pexels-photo-935777.jpeg?auto=compress&w=800&q=80" alt="Rotina de sono" />
+      <div class="card-content">
+        <h3 class="card-title">Rotina de Sono</h3>
+        <p class="card-text">
+          Dormir 7-9h por noite aumenta o hormônio do crescimento em até 70%, essencial para recuperação muscular e saúde cerebral. Um sono de qualidade reduz o risco de obesidade, diabetes e melhora o humor.
+        </p>
+        <ul>
+          <li><strong>Benefícios:</strong> Recuperação muscular, memória, humor e equilíbrio hormonal.</li>
+          <li><strong>Dica:</strong> Mantenha o quarto escuro (18-20°C), evite telas 1h antes, crie uma rotina noturna relaxante e evite cafeína após 18h. Cochilos de 20min podem melhorar a cognição sem prejudicar o sono noturno.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Alimentação Consciente -->
+    <div class="card">
+      <img class="card-img" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" alt="Alimentação saudável" />
+      <div class="card-content">
+        <h3 class="card-title">Alimentação Consciente</h3>
+        <p class="card-text">
+          Praticar a alimentação consciente significa comer devagar, prestando atenção aos sinais de fome e saciedade. Isso ajuda a evitar excessos, melhora a digestão e promove escolhas alimentares mais saudáveis.
+        </p>
+        <ul>
+          <li><strong>Benefícios:</strong> Controle de peso, melhor digestão, maior satisfação com as refeições.</li>
+          <li><strong>Dica:</strong> Desligue telas durante as refeições, mastigue bem os alimentos e aprecie cada sabor.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Atividade Física Regular -->
+    <div class="card">
+      <img class="card-img" src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=600&q=80" alt="Atividade física" />
+      <div class="card-content">
+        <h3 class="card-title">Atividade Física Regular</h3>
+        <p class="card-text">
+          Praticar exercícios ao menos 150 minutos por semana reduz o risco de doenças crônicas, melhora o humor e fortalece ossos e músculos. Caminhadas, ciclismo ou treinos funcionais são ótimas opções para todas as idades.
+        </p>
+        <ul>
+          <li><strong>Benefícios:</strong> Controle da pressão arterial, prevenção de diabetes, fortalecimento do sistema imunológico.</li>
+          <li><strong>Dica:</strong> Encontre uma atividade que goste, convide amigos ou familiares e mantenha a regularidade.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Saúde Mental e Social -->
+    <div class="card">
+      <img class="card-img" src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" alt="Saúde mental e social" />
+      <div class="card-content">
+        <h3 class="card-title">Saúde Mental e Social</h3>
+        <p class="card-text">
+          Manter relações sociais positivas e reservar tempo para lazer são fundamentais para o bem-estar. Conversar com amigos, praticar hobbies e buscar apoio emocional quando necessário fortalecem a saúde mental.
+        </p>
+        <ul>
+          <li><strong>Benefícios:</strong> Redução do estresse, maior sensação de pertencimento e felicidade.</li>
+          <li><strong>Dica:</strong> Participe de grupos, clubes ou voluntariado para ampliar sua rede de apoio.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+        <!-- DIETA -->
+        <section id="dieta" class="categoria">
+            <h2 class="section-title"><i class="fas fa-utensils"></i> Nutrição Estratégica</h2>
+            <div class="card-grid">
+                <!-- 10 Receitas com imagens reais e detalhamento -->
+                <div class="card">
+                    <img src="https://cdn.oceanserver.com.br/lojas/clubfitlife/uploads_produto/726-66a9539140c6c.png" alt="Frango grelhado" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Frango Grelhado com Batata Doce</h3>
+                        <div class="card-subtitle"><i class="fas fa-fire"></i> 350 kcal | <i class="fas fa-dumbbell"></i> 35g proteína</div>
+                        <div class="recipe-ingredients">
+                            <h4><i class="fas fa-shopping-basket"></i> Ingredientes</h4>
+                            <ul>
+                                <li>150g de peito de frango</li>
+                                <li>1 batata doce média</li>
+                                <li>Sal, pimenta, azeite, alecrim</li>
+                            </ul>
+                        </div>
+                        <p class="card-text"><strong>Preparo:</strong> Tempere o frango e grelhe. Asse a batata doce fatiada no forno com azeite e alecrim até dourar.</p>
+                        <ul>
+                            <li><strong>Dica:</strong> Sirva com folhas verdes.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://receitadaboa.com.br/wp-content/uploads/2024/07/iStock-466063332.jpg" alt="Omelete de claras" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Omelete Fit de Espinafre</h3>
+                        <div class="card-subtitle"><i class="fas fa-fire"></i> 280 kcal | <i class="fas fa-dumbbell"></i> 32g proteína</div>
+                        <div class="recipe-ingredients">
+                            <h4><i class="fas fa-shopping-basket"></i> Ingredientes</h4>
+                            <ul>
+                                <li>4 claras + 1 ovo inteiro</li>
+                                <li>1 xícara de espinafre fresco</li>
+                                <li>50g de peito de peru</li>
+                                <li>30g de queijo cottage</li>
+                                <li>Tomate-cereja</li>
+                            </ul>
+                        </div>
+                        <p class="card-text"><strong>Preparo:</strong> Refogue o espinafre, acrescente peito de peru, despeje os ovos batidos e finalize com cottage e tomate.</p>
+                        <ul>
+                            <li><strong>Dica:</strong> Use temperos verdes para mais sabor.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://receitadaboa.com.br/wp-content/uploads/2024/08/panqueca-de-banana.jpg" alt="Panqueca de aveia" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Panqueca de Aveia Proteica</h3>
+                        <div class="card-subtitle"><i class="fas fa-fire"></i> 250 kcal | <i class="fas fa-dumbbell"></i> 18g proteína</div>
+                        <div class="recipe-ingredients">
+                            <h4><i class="fas fa-shopping-basket"></i> Ingredientes</h4>
+                            <ul>
+                                <li>2 ovos</li>
+                                <li>2 colheres de sopa de aveia</li>
+                                <li>1 banana amassada</li>
+                                <li>1 scoop de whey (opcional)</li>
+                            </ul>
+                        </div>
+                        <p class="card-text"><strong>Preparo:</strong> Misture tudo, leve à frigideira antiaderente até dourar. Sirva com mel ou pasta de amendoim.</p>
+                        <ul>
+                            <li><strong>Dica:</strong> Use cacau em pó para sabor chocolate.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://guiadacozinha.com.br/wp-content/uploads/2019/10/salada-colorida-de-frango-22300.jpg" alt="Salada colorida" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Salada Colorida com Frango</h3>
+                        <div class="card-subtitle"><i class="fas fa-fire"></i> 320 kcal | <i class="fas fa-dumbbell"></i> 30g proteína</div>
+                        <div class="recipe-ingredients">
+                            <h4><i class="fas fa-shopping-basket"></i> Ingredientes</h4>
+                            <ul>
+                                <li>100g de frango grelhado</li>
+                                <li>Folhas verdes variadas</li>
+                                <li>Tomate, cenoura, pepino</li>
+                                <li>1 colher de azeite</li>
+                            </ul>
+                        </div>
+                        <p class="card-text"><strong>Preparo:</strong> Misture os ingredientes e tempere a gosto. Prato leve e nutritivo para o almoço.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://boaforma.abril.com.br/wp-content/uploads/sites/2/2023/05/receita-de-batata-com-atum.png?w=653&h=435&crop=1" alt="Atum com batata" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Atum com Batata e Ovo</h3>
+                        <div class="card-subtitle"><i class="fas fa-fire"></i> 340 kcal | <i class="fas fa-dumbbell"></i> 30g proteína</div>
+                        <div class="recipe-ingredients">
+                            <h4><i class="fas fa-shopping-basket"></i> Ingredientes</h4>
+                            <ul>
+                                <li>1 lata de atum</li>
+                                <li>1 batata cozida</li>
+                                <li>2 ovos cozidos</li>
+                                <li>Ervas e azeite</li>
+                            </ul>
+                        </div>
+                        <p class="card-text"><strong>Preparo:</strong> Misture tudo em cubos, tempere com azeite, sal e ervas.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://www.cozinharsemstress.pt/cozinhar/wp-content/uploads/2020/01/A1-5340781.jpg" alt="Quinoa com legumes" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Quinoa com Legumes</h3>
+                        <div class="card-subtitle"><i class="fas fa-fire"></i> 220 kcal | <i class="fas fa-dumbbell"></i> 8g proteína</div>
+                        <div class="recipe-ingredients">
+                            <h4><i class="fas fa-shopping-basket"></i> Ingredientes</h4>
+                            <ul>
+                                <li>1 xícara de quinoa cozida</li>
+                                <li>Legumes variados (cenoura, abobrinha, brócolis)</li>
+                                <li>1 colher de azeite</li>
+                            </ul>
+                        </div>
+                        <p class="card-text"><strong>Preparo:</strong> Refogue os legumes no azeite e misture com a quinoa cozida.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://blog.gsuplementos.com.br/wp-content/uploads/2024/12/Strogonoff-light-com-iogurte-desnatado-250x250.webp" alt="Strogonoff de frango fit" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Strogonoff de Frango Fit</h3>
+                        <div class="card-subtitle"><i class="fas fa-fire"></i> 400 kcal | <i class="fas fa-dumbbell"></i> 35g proteína</div>
+                        <div class="recipe-ingredients">
+                            <h4><i class="fas fa-shopping-basket"></i> Ingredientes</h4>
+                            <ul>
+                                <li>150g de frango em cubos</li>
+                                <li>1 colher de creme de ricota light</li>
+                                <li>1 colher de molho de tomate</li>
+                                <li>Champignon, cebola, alho</li>
+                            </ul>
+                        </div>
+                        <p class="card-text"><strong>Preparo:</strong> Refogue cebola e alho, adicione frango, depois o molho e o creme de ricota. Finalize com champignon.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://vitat.com.br/receitas/images/recipeshandler.jpg?id=82535&tipo=r&default=s&ims=fit-in/414x275/filters:quality(60)" alt="Arroz integral com lentilha" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Arroz Integral com Lentilha</h3>
+                        <div class="card-subtitle"><i class="fas fa-fire"></i> 210 kcal | <i class="fas fa-dumbbell"></i> 7g proteína</div>
+                        <div class="recipe-ingredients">
+                            <h4><i class="fas fa-shopping-basket"></i> Ingredientes</h4>
+                            <ul>
+                                <li>1 xícara de arroz integral cozido</li>
+                                <li>1/2 xícara de lentilha cozida</li>
+                                <li>1 colher de azeite</li>
+                                <li>Alho e cebola</li>
+                            </ul>
+                        </div>
+                        <p class="card-text"><strong>Preparo:</strong> Refogue alho e cebola, misture arroz e lentilha e aqueça.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://blog.gsuplementos.com.br/wp-content/uploads/2024/04/iStock-164106969-250x250.jpg" alt="Wrap de frango" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Wrap de Frango com Ricota</h3>
+                        <div class="card-subtitle"><i class="fas fa-fire"></i> 280 kcal | <i class="fas fa-dumbbell"></i> 22g proteína</div>
+                        <div class="recipe-ingredients">
+                            <h4><i class="fas fa-shopping-basket"></i> Ingredientes</h4>
+                            <ul>
+                                <li>1 pão folha integral</li>
+                                <li>80g de frango desfiado</li>
+                                <li>2 colheres de ricota</li>
+                                <li>Alface e tomate</li>
+                            </ul>
+                        </div>
+                        <p class="card-text"><strong>Preparo:</strong> Monte o wrap com todos os ingredientes e enrole.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://www.osazeitesdaespanha.com/wp-content/uploads/2024/07/Diseno-sin-titulo-66.png.webp" alt="Salada de atum" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Salada de Atum com Grão-de-Bico</h3>
+                        <div class="card-subtitle"><i class="fas fa-fire"></i> 320 kcal | <i class="fas fa-dumbbell"></i> 25g proteína</div>
+                        <div class="recipe-ingredients">
+                            <h4><i class="fas fa-shopping-basket"></i> Ingredientes</h4>
+                            <ul>
+                                <li>1 lata de atum</li>
+                                <li>1 xícara de grão-de-bico cozido</li>
+                                <li>Tomate, cebola, azeite</li>
+                            </ul>
+                        </div>
+                        <p class="card-text"><strong>Preparo:</strong> Misture todos os ingredientes e tempere a gosto.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://www.receitasnestle.com.br/sites/default/files/styles/recipe_detail_desktop_new/public/srh_recipes/164d7a91b4f6d5e675da6c7bd933ce86.webp?itok=UBUVS-so" alt="Bowl de iogurte" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Bowl de Iogurte com Frutas e Granola</h3>
+                        <div class="card-subtitle"><i class="fas fa-fire"></i> 200 kcal | <i class="fas fa-dumbbell"></i> 8g proteína</div>
+                        <div class="recipe-ingredients">
+                            <h4><i class="fas fa-shopping-basket"></i> Ingredientes</h4>
+                            <ul>
+                                <li>1 pote de iogurte natural</li>
+                                <li>Frutas picadas (banana, morango, kiwi)</li>
+                                <li>2 colheres de granola sem açúcar</li>
+                            </ul>
+                        </div>
+                        <p class="card-text"><strong>Preparo:</strong> Monte o bowl com iogurte, frutas e granola por cima.</p>
+                    </div>
+                </div>
+            </div>
+            <h3><i class="fas fa-apple-alt"></i> Alimentos-Chave para Ganho Muscular</h3>
+            <table class="food-table">
+                <thead>
+                    <tr>
+                        <th>Alimento</th>
+                        <th>Proteínas</th>
+                        <th>Carboidratos</th>
+                        <th>Gorduras</th>
+                        <th>Benefícios</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Peito de Frango (100g)</td>
+                        <td class="macro-cell">31g</td>
+                        <td>0g</td>
+                        <td>3.6g</td>
+                        <td>Fonte magra de proteína, fácil digestão, baixo custo.</td>
+                    </tr>
+                    <tr>
+                        <td>Atum (100g)</td>
+                        <td class="macro-cell">23g</td>
+                        <td>0g</td>
+                        <td>0.8g</td>
+                        <td>Rico em ômega-3, prático e versátil em saladas.</td>
+                    </tr>
+                    <tr>
+                        <td>Batata Doce (100g)</td>
+                        <td>1g</td>
+                        <td class="macro-cell">20g</td>
+                        <td>0.1g</td>
+                        <td>Fonte de energia de baixo índice glicêmico, ideal para treinos.</td>
+                    </tr>
+                    <tr>
+                        <td>Abacate (100g)</td>
+                        <td>2g</td>
+                        <td>9g</td>
+                        <td class="macro-cell">15g</td>
+                        <td>Gorduras boas, saciedade, ajuda na absorção de vitaminas.</td>
+                    </tr>
+                    <tr>
+                        <td>Quinoa (100g)</td>
+                        <td class="macro-cell">4g</td>
+                        <td>21g</td>
+                        <td>2g</td>
+                        <td>Proteína vegetal completa, rica em minerais.</td>
+                    </tr>
+                    <tr>
+                        <td>Ovos (2 unid.)</td>
+                        <td class="macro-cell">12g</td>
+                        <td>1g</td>
+                        <td>10g</td>
+                        <td>Vitaminas do complexo B, colina, proteína de alto valor biológico.</td>
+                    </tr>
+                    <tr>
+                        <td>Amendoim (30g)</td>
+                        <td class="macro-cell">7g</td>
+                        <td>6g</td>
+                        <td>14g</td>
+                        <td>Gorduras saudáveis, alto teor proteico, ótimo lanche.</td>
+                    </tr>
+                    <tr>
+                        <td>Iogurte Natural (1 pote)</td>
+                        <td class="macro-cell">8g</td>
+                        <td>12g</td>
+                        <td>4g</td>
+                        <td>Probióticos para saúde intestinal, cálcio.</td>
+                    </tr>
+                    <tr>
+                        <td>Grão-de-bico (100g cozido)</td>
+                        <td class="macro-cell">7g</td>
+                        <td>27g</td>
+                        <td>2g</td>
+                        <td>Proteína vegetal, fibras, saciedade.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- TREINO -->
+
+        <section id="treino" class="categoria">
+            <div class="training-program">
+                <div class="program-header">
+                    <i class="fas fa-dumbbell"></i> EXERCÍCIOS
+                </div>
+
+                <div class="program-days">
+                    <div class="day">
+                        <h4 class="day-title">Supino Inclinado</h4>
+                        <div class="exercise">
+                            <img src="https://www.hipertrofia.org/blog/wp-content/uploads/2023/09/barbell-incline-bench-press.gif" alt="Supino Inclinado" class="exercise-img">
+                            <div class="exercise-info">
+                                <div class="exercise-muscles">Peitoral</div>
+                                <div class="exercise-sets">4x8-12</div>
+                                <div class="exercise-desc">Incline o banco entre 30 e 45 graus. Deite-se de costas, segure a barra com as mãos um pouco mais largas que os ombros. Abaixe a barra até o peito e empurre para cima até estender completamente os braços. Mantenha o controle e a postura.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day">
+                        <h4 class="day-title">Supino Reto</h4>
+                        <div class="exercise">
+                            <img src="https://www.hipertrofia.org/blog/wp-content/uploads/2024/04/barbell-bench-press.gif" alt="Supino reto" class="exercise-img">
+                            <div class="exercise-info">
+                                <div class="exercise-muscles">Peitoral</div>
+                                <div class="exercise-sets">4x8-12</div>
+                                <div class="exercise-desc">Deite-se de costas em um banco, com os pés firmes no chão. Segure a barra com as mãos um pouco mais largas que os ombros, abaixe-a lentamente até o peito e empurre-a para cima até estender completamente os braços.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day">
+                        <h4 class="day-title">Supino Declinado</h4>
+                        <div class="exercise">
+                            <img src="https://www.hipertrofia.org/blog/wp-content/uploads/2018/09/barbell-decline-bench-press.gif" alt="Supino Declinado" class="exercise-img">
+                            <div class="exercise-info">
+                                <div class="exercise-muscles">Peitoral</div>
+                                <div class="exercise-sets">4x8-12</div>
+                                <div class="exercise-desc">Posicione-se deitado em um banco declinado com os pés fixados. Segure a barra na largura dos ombros e abaixe-a até o peito lentamente. Empurre a barra para cima até estender completamente os braços. Repita o movimento controladamente.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day">
+                        <h4 class="day-title">Crucifixo</h4>
+                        <div class="exercise">
+                            <img src="https://www.hipertrofia.org/blog/wp-content/uploads/2023/09/dumbbell-fly.gif" alt="Crucifixo" class="exercise-img">
+                            <div class="exercise-info">
+                                <div class="exercise-muscles">Peitoral</div>
+                                <div class="exercise-sets">4x8-12</div>
+                                <div class="exercise-desc">Deite-se em um banco plano com um haltere em cada mão. Estenda os braços para os lados, mantendo uma leve flexão nos cotovelos. Levante os halteres em um arco suave até que se encontrem acima do peito. Retorne lentamente à posição inicial.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day">
+                        <h4 class="day-title">Voador ou Peck Deck</h4>
+                        <div class="exercise">
+                            <img src="https://www.hipertrofia.org/blog/wp-content/uploads/2023/09/lever-seated-fly.gif" alt="Voador ou Peck Deck" class="exercise-img">
+                            <div class="exercise-info">
+                                <div class="exercise-muscles">Peitoral</div>
+                                <div class="exercise-sets">4x8-12</div>
+                                <div class="exercise-desc">Para fazer o exercício corretamente, sente-se na máquina com os pés firmes no chão. Pegue na hastes laterais em uma altura discretamente abaixo da linha do ombro. Inspire e puxe as hastes em direção ao centro, mantendo uma curvatura leve nos cotovelos. Expire e retorne as hastes controladamente até as laterais.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day">
+                        <h4 class="day-title">Pullover com Halter</h4>
+                        <div class="exercise">
+                            <img src="https://www.hipertrofia.org/blog/wp-content/uploads/2020/06/dumbbell-pullover.gif" alt="Pullover com Halter" class="exercise-img">
+                            <div class="exercise-info">
+                                <div class="exercise-muscles">Peitoral</div>
+                                <div class="exercise-sets">4x8-12</div>
+                                <div class="exercise-desc">Deite-se em um banco, segurando um haltere com ambas as mãos acima do peito. Com os braços levemente dobrados, abaixe o haltere lentamente atrás da cabeça até sentir um alongamento no peitoral. Retorne à posição inicial, contraindo os músculos do peito e mantendo o controle do movimento.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day">
+                        <h4 class="day-title">Agachamento Livre</h4>
+                        <div class="exercise">
+                            <img src="https://www.hipertrofia.org/blog/wp-content/uploads/2024/07/barbell-high-bar-squat.gif" alt="Agachamento livre" class="exercise-img">
+                            <div class="exercise-info">
+                                <div class="exercise-muscles">Quadríceps, Glúteos</div>
+                                <div class="exercise-sets">4x10-12</div>
+                                <div class="exercise-desc">Com a barra apoiada nas costas, desça flexionando os joelhos até os quadris ficarem abaixo da linha dos joelhos e suba controlando o movimento.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day">
+                        <h4 class="day-title">Leg Press</h4>
+                        <div class="exercise">
+                            <img src="https://www.hipertrofia.org/blog/wp-content/uploads/2018/01/sled-45%D0%B2-leg-press-side-pov.gif" alt="Leg Press" class="exercise-img">
+                            <div class="exercise-info">
+                                <div class="exercise-muscles">Quadríceps</div>
+                                <div class="exercise-sets">4x10-12</div>
+                                <div class="exercise-desc">Para fazer o exercício corretamente, sente-se na máquina, posicione os pés na plataforma na largura dos ombros, e empurre a plataforma até as pernas ficarem quase estendidas, depois volte à posição inicial.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day">
+                        <h4 class="day-title">Cadeira Extensora</h4>
+                        <div class="exercise">
+                            <img src="https://www.hipertrofia.org/blog/wp-content/uploads/2023/11/lever-leg-extension.gif" alt="Cadeira Extensora" class="exercise-img">
+                            <div class="exercise-info">
+                                <div class="exercise-muscles">Quadríceps</div>
+                                <div class="exercise-sets">4x10-12</div>
+                                <div class="exercise-desc">Para fazer o exercício corretamente, sente-se na máquina, posicione os pés na plataforma na largura dos ombros, e empurre a plataforma até as pernas ficarem quase estendidas, depois volte à posição inicial.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day">
+                        <h4 class="day-title">Mesa Flexora</h4>
+                        <div class="exercise">
+                            <img src="https://www.hipertrofia.org/blog/wp-content/uploads/2023/04/lever-lying-leg-curl.gif" alt="Mesa Flexora" class="exercise-img">
+                            <div class="exercise-info">
+                                <div class="exercise-muscles">Quadríceps</div>
+                                <div class="exercise-sets">4x10-12</div>
+                                <div class="exercise-desc">Para fazer o exercício, deite-se de bruços na mesa flexora com os joelhos alinhados com o eixo de rotação. Segure as alças na sua frente para suporte, mantenha os quadris firmes e flexione os joelhos, levando os calcanhares em direção aos glúteos. Retorne lentamente à posição inicial.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day">
+                        <h4 class="day-title">Agachamento búlgaro</h4>
+                        <div class="exercise">
+                            <img src="https://www.hipertrofia.org/blog/wp-content/uploads/2024/06/agachamento-bulgaro.gif" alt="Agachamento búlgaro" class="exercise-img">
+                            <div class="exercise-info">
+                                <div class="exercise-muscles">Quadríceps</div>
+                                <div class="exercise-sets">4x10-12</div>
+                                <div class="exercise-desc">Para fazer o exercício, posicione um pé atrás de você em um banco enquanto o outro fica firmemente plantado no chão. Agache-se até que o joelho da perna de trás quase toque o chão, depois levante-se.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day">
+                        <h4 class="day-title">Stiff</h4>
+                        <div class="exercise">
+                            <img src="https://www.hipertrofia.org/blog/wp-content/uploads/2023/12/dumbbell-stiff-leg-deadlift.gif" alt="Stiff" class="exercise-img">
+                            <div class="exercise-info">
+                                <div class="exercise-muscles">Quadríceps</div>
+                                <div class="exercise-sets">4x10-12</div>
+                                <div class="exercise-desc">Para fazer o exercício, mantenha os pés na largura dos ombros, segure a barra com as mãos ligeiramente mais largas que os ombros e desça o peso com a coluna reta e os joelhos ligeiramente flexionados até sentir um alongamento nos isquiotibiais, então volte à posição inicial.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day">
+                        <h4 class="day-title">Remada Curvada</h4>
+                        <div class="exercise">
+                            <img src="https://www.hipertrofia.org/blog/wp-content/uploads/2024/05/barbell-bent-over-row.gif" alt="Remada curvada" class="exercise-img">
+                            <div class="exercise-info">
+                                <div class="exercise-muscles">Dorsais</div>
+                                <div class="exercise-sets">4x8-12</div>
+                                <div class="exercise-desc">Incline o tronco, segure a barra e puxe até encostar no abdômen, mantendo a coluna reta.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day">
+                        <h4 class="day-title">Pulley costas</h4>
+                        <div class="exercise">
+                            <img src="https://www.hipertrofia.org/blog/wp-content/uploads/2019/05/cable-pulldown.gif" alt="Pulley costas" class="exercise-img">
+                            <div class="exercise-info">
+                                <div class="exercise-muscles">Dorsais</div>
+                                <div class="exercise-sets">4x8-12</div>
+                                <div class="exercise-desc">Para fazer o exercício corretamente, o truque é manter o tronco ligeiramente inclinado para trás, segurar a barra com as mãos um pouco mais largas que os ombros e puxar em direção ao peito, mantendo os cotovelos sempre para baixo.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day">
+                        <h4 class="day-title">Remada serrote</h4>
+                        <div class="exercise">
+                            <img src="https://www.hipertrofia.org/blog/wp-content/uploads/2023/11/dumbbell-one-arm-bentover-row.gif" alt="Remada serrote" class="exercise-img">
+                            <div class="exercise-info">
+                                <div class="exercise-muscles">Dorsais</div>
+                                <div class="exercise-sets">4x8-12</div>
+                                <div class="exercise-desc">Para executá-lo corretamente, você deve posicionar um joelho e a mão do mesmo lado sobre um banco, enquanto mantém a coluna reta e o abdômen ativado para estabilizar o tronco. Com a outra mão, puxe o halter em direção ao quadril, mantendo o cotovelo próximo ao corpo e evitando movimentos bruscos ou rotação do tronco.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day">
+                        <h4 class="day-title">Remada Baixa</h4>
+                        <div class="exercise">
+                            <img src="https://www.hipertrofia.org/blog/wp-content/uploads/2024/05/cable-straight-back-seated-row.gif" alt="Remada Baixa" class="exercise-img">
+                            <div class="exercise-info">
+                                <div class="exercise-muscles">Dorsais</div>
+                                <div class="exercise-sets">4x8-12</div>
+                                <div class="exercise-desc">Para executar corretamente, sente-se com o tronco ereto, posicione os pés nos apoios e segure o pegador com firmeza. Mantenha o abdômen contraído para estabilizar a lombar e puxe o cabo em direção ao abdômen, contraindo as escápulas como se estivesse tentando apertar uma caneta entre elas.Depois, retorne à posição inicial controlando o movimento</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day">
+                        <h4 class="day-title">Barra Fixa</h4>
+                        <div class="exercise">
+                            <img src="https://www.hipertrofia.org/blog/wp-content/uploads/2019/05/pullup.gif" alt="Barra fixa" class="exercise-img">
+                            <div class="exercise-info">
+                                <div class="exercise-muscles">Dorsais</div>
+                                <div class="exercise-sets">3xMax</div>
+                                <div class="exercise-desc">Pendure-se na barra com pegada aberta e puxe o corpo até o queixo ultrapassar a barra.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day">
+                        <h4 class="day-title">Pull Down</h4>
+                        <div class="exercise">
+                            <img src="https://www.hipertrofia.org/blog/wp-content/uploads/2019/05/pulldown.gif" alt="Pull Down" class="exercise-img">
+                            <div class="exercise-info">
+                                <div class="exercise-muscles">Dorsais</div>
+                                <div class="exercise-sets">3xMax</div>
+                                <div class="exercise-desc">Para fazer corretamente, você deve ajustar a polia alta e segurar a barra reta com as mãos um pouco mais largas que a largura dos ombros, mantendo os braços estendidos, mas não completamente travados.Incline levemente o tronco para frente e puxe a barra em direção aos quadris, mantendo uma leve contração abdominal para estabilizar o corpo.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day">
+                        <h4 class="day-title">Desenvolvimento com Halteres</h4>
+                        <div class="exercise">
+                            <img src="https://www.hipertrofia.org/blog/wp-content/uploads/2023/09/dumbbell-seated-shoulder-press.gif" alt="Desenvolvimento com halteres" class="exercise-img">
+                            <div class="exercise-info">
+                                <div class="exercise-muscles">Ombros</div>
+                                <div class="exercise-sets">3x10-12</div>
+                                <div class="exercise-desc">Sentado, segure um halter em cada mão na altura dos ombros e empurre acima da cabeça.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day">
+                        <h4 class="day-title">Elevação lateral com halteres</h4>
+                        <div class="exercise">
+                            <img src="https://www.hipertrofia.org/blog/wp-content/uploads/2023/11/dumbbell-lateral-raise.gif" alt="Elevação lateral com halteres" class="exercise-img">
+                            <div class="exercise-info">
+                                <div class="exercise-muscles">Ombros</div>
+                                <div class="exercise-sets">3x10-12</div>
+                                <div class="exercise-desc">Para fazer o exercício, fique em pé com os pés na largura dos ombros, segure os halteres ao lado do corpo e, com os braços levemente flexionados, eleve-os até a altura dos ombros. Controle a descida para maximizar o esforço.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day">
+                        <h4 class="day-title">Elevação frontal com halteres</h4>
+                        <div class="exercise">
+                            <img src="https://www.hipertrofia.org/blog/wp-content/uploads/2023/11/dumbbell-front-raise.gif" alt="Elevação frontal com halteres" class="exercise-img">
+                            <div class="exercise-info">
+                                <div class="exercise-muscles">Ombros</div>
+                                <div class="exercise-sets">3x10-12</div>
+                                <div class="exercise-desc">Para fazer o exercício, fique em pé, segurando halteres com as palmas voltadas para as coxas. Levante os halteres à sua frente até a altura dos ombros, mantendo os braços retos e o abdômen contraído. Desça lentamente à posição inicial e repita, mantendo o controle durante o movimento.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day">
+                        <h4 class="day-title">Remada alta com halteres</h4>
+                        <div class="exercise">
+                            <img src="https://www.hipertrofia.org/blog/wp-content/uploads/2024/01/dumbbell-upright-row.gif" alt="Remada alta com halteres" class="exercise-img">
+                            <div class="exercise-info">
+                                <div class="exercise-muscles">Ombros</div>
+                                <div class="exercise-sets">3x10-12</div>
+                                <div class="exercise-desc">Para fazer o exercício, segure os halteres com as palmas voltadas para o corpo, braços estendidos. Puxe os halteres para cima, mantendo-os próximos ao corpo, até que estejam na altura do peito. Mantenha os cotovelos acima dos punhos e volte à posição inicial controlando o movimento.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day">
+                        <h4 class="day-title">Crucifixo invertido com halteres</h4>
+                        <div class="exercise">
+                            <img src="https://www.hipertrofia.org/blog/wp-content/uploads/2018/03/crucifixo-invertido-com-halteres.gif" alt="Crucifixo invertido com halteres" class="exercise-img">
+                            <div class="exercise-info">
+                                <div class="exercise-muscles">Ombros</div>
+                                <div class="exercise-sets">3x10-12</div>
+                                <div class="exercise-desc">Para fazer o exercício incline o tronco para frente, segure os halteres com os braços estendidos e levante-os lateralmente até que fiquem alinhados com os ombros. Controle o movimento na descida, mantendo os cotovelos levemente flexionados.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day">
+                        <h4 class="day-title">Elevação lateral inclinada</h4>
+                        <div class="exercise">
+                            <img src="https://www.hipertrofia.org/blog/wp-content/uploads/2024/05/elevacao-lateral-com-halteres-inclinada.gif" alt="Elevação lateral inclinada" class="exercise-img">
+                            <div class="exercise-info">
+                                <div class="exercise-muscles">Ombros</div>
+                                <div class="exercise-sets">3x10-12</div>
+                                <div class="exercise-desc">Para fazer o exercício, segure-se com uma mão em uma estrutura estável e fique com o tronco inclinado lateralmente (vide ilustração acima), com a mão livre segure um halter com o braço estendido e levante-o até a altura do ombro. Desça lentamente, controlando o movimento, e repita.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day">
+                        <h4 class="day-title">Rosca Simultânea</h4>
+                        <div class="exercise">
+                            <img src="https://www.hipertrofia.org/blog/wp-content/uploads/2019/04/rosca-simultanea.gif" alt="Rosca Simultânea" class="exercise-img">
+                            <div class="exercise-info">
+                                <div class="exercise-muscles">Bíceps</div>
+                                <div class="exercise-sets">3x10-12</div>
+                                <div class="exercise-desc">Em pé, segure os halteres com pegada supinada e flexione os cotovelos até os halteres chegarem próximo ao peito.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day">
+                        <h4 class="day-title">Rosca Concentrada</h4>
+                        <div class="exercise">
+                            <img src="https://www.hipertrofia.org/blog/wp-content/uploads/2019/04/rosca-concentrada.gif" alt="Rosca Concentrada" class="exercise-img">
+                            <div class="exercise-info">
+                                <div class="exercise-muscles">Bíceps</div>
+                                <div class="exercise-sets">3x10-12</div>
+                                <div class="exercise-desc">Evite roubar com o tronco ou perder o controle na descida. Quanto mais devagar for a fase excêntrica (descida), mais eficiente será o estímulo no bíceps. É um movimento simples, mas exige paciência e precisão para extrair o máximo de benefícios.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day">
+                        <h4 class="day-title">Rosca Scott</h4>
+                        <div class="exercise">
+                            <img src="https://www.hipertrofia.org/blog/wp-content/uploads/2019/04/rosca-scott.gif" alt="Rosca Scott" class="exercise-img">
+                            <div class="exercise-info">
+                                <div class="exercise-muscles">Bíceps</div>
+                                <div class="exercise-sets">3x10-12</div>
+                                <div class="exercise-desc">Na rosca Scott, sente-se no banco com os braços apoiados, segure a barra com as palmas para cima, flexione os cotovelos para levantar o peso e depois desça devagar, mantendo o movimento controlado.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day">
+                        <h4 class="day-title">Rosca Martelo</h4>
+                        <div class="exercise">
+                            <img src="https://www.hipertrofia.org/blog/wp-content/uploads/2023/04/dumbbell-hammer-curl-v-2.gif" alt="Rosca Scott" class="exercise-img">
+                            <div class="exercise-info">
+                                <div class="exercise-muscles">Bíceps</div>
+                                <div class="exercise-sets">3x10-12</div>
+                                <div class="exercise-desc">Fique em pé segurando um halter em cada mão com as palmas voltadas para dentro, flexione os cotovelos para levantar os pesos ao lado do corpo e depois desça devagar, mantendo o movimento controlado.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day">
+                        <h4 class="day-title">Tríceps Corda</h4>
+                        <div class="exercise">
+                            <img src="https://www.hipertrofia.org/blog/wp-content/uploads/2025/01/triceps-corda-na-polia-alta.gif" alt="Tríceps Corda" class="exercise-img">
+                            <div class="exercise-info">
+                                <div class="exercise-muscles">Tríceps</div>
+                                <div class="exercise-sets">3x10-12</div>
+                                <div class="exercise-desc">No tríceps corda, fique em pé de frente para a polia alta, segure a corda com as duas mãos, mantenha os cotovelos fixos ao lado do corpo e empurre a corda para baixo até estender os braços, depois retorne devagar ao início, sempre controlando o movimento</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day">
+                        <h4 class="day-title">Tríceps Coice</h4>
+                        <div class="exercise">
+                            <img src="https://www.hipertrofia.org/blog/wp-content/uploads/2025/01/triceps-coice.gif" alt="Tríceps Coice" class="exercise-img">
+                            <div class="exercise-info">
+                                <div class="exercise-muscles">Tríceps</div>
+                                <div class="exercise-sets">3x10-12</div>
+                                <div class="exercise-desc">No tríceps coice, incline o tronco para frente, mantenha o cotovelo junto ao corpo segurando o halter, estenda o braço para trás até ficar reto e depois volte devagar, controlando o movimento.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day">
+                        <h4 class="day-title">Tríceps Testa</h4>
+                        <div class="exercise">
+                            <img src="https://www.hipertrofia.org/blog/wp-content/uploads/2025/01/rosca-testa-com-barra2.gif" alt="Tríceps Testa" class="exercise-img">
+                            <div class="exercise-info">
+                                <div class="exercise-muscles">Tríceps</div>
+                                <div class="exercise-sets">3x10-12</div>
+                                <div class="exercise-desc">Segure a barra ou halteres com as mãos alinhadas aos ombros e estenda os braços para cima, posicionando-os acima do seu peitoral. Flexione os cotovelos lentamente, trazendo a barra em direção à testa ou ligeiramente atrás da cabeça.Retorne à posição inicial estendendo os braços e contraindo o tríceps no final do movimento.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day">
+                        <h4 class="day-title">Tríceps com barra reta ou W</h4>
+                        <div class="exercise">
+                            <img src="https://www.hipertrofia.org/blog/wp-content/uploads/2025/01/triceps-na-polia-com-barra-reta.gif" alt="Tríceps com barra reta ou W" class="exercise-img">
+                            <div class="exercise-info">
+                                <div class="exercise-muscles">Tríceps</div>
+                                <div class="exercise-sets">3x10-12</div>
+                                <div class="exercise-desc">Segure a barra com mãos na largura dos ombros e palmas viradas para baixo (pegada pronada).Mantendo os cotovelos fixos ao lado do corpo, desça a carga até estender os braços completamente.Segure esta posição por um segundo e então suba a carga de forma controlada. Não use impulso para conseguir descer a carga e lembre-se de manter os cotovelos no mesmo lugar durante todo o movimento.</div>
+                            </div>
+                        </div>
+                    </div>
+               
+                </div>
+                <div class="program-header">
+                    <i class="fas fa-dumbbell"></i> DIVISÕES DE TREINO
+                </div>
+                <div class="program-days">
+                    <div class="day">
+                        <h4 class="day-title">Full Body</h4>
+                        <ul>
+                            <li>Treina o corpo inteiro em cada sessão (3x semana)</li>
+                            <li>Exemplo: Agachamento, Supino, Remada, Desenvolvimento, Abdominal</li>
+                            <li>Indicado para iniciantes e quem tem pouco tempo</li>
+                        </ul>
+                    </div>
+                    <div class="day">
+                        <h4 class="day-title">AB</h4>
+                        <ul>
+                            <li><strong>A:</strong> Membros superiores (Peito, Costas, Ombros, Braços)</li>
+                            <li><strong>B:</strong> Membros inferiores (Pernas, Glúteos, Abdômen)</li>
+                            <li>Roda durante a semana: A/B/A - B/A/B</li>
+                        </ul>
+                    </div>
+                    <div class="day">
+                        <h4 class="day-title">ABC</h4>
+                        <ul>
+                            <li><strong>A:</strong> Peito e tríceps</li>
+                            <li><strong>B:</strong> Costas e bíceps</li>
+                            <li><strong>C:</strong> Pernas e ombros</li>
+                            <li>Permite maior volume semanal para cada grupo muscular</li>
+                        </ul>
+                    </div>
+                    <div class="day">
+                        <h4 class="day-title">ABCD</h4>
+                        <ul>
+                            <li><strong>A:</strong> Peito e tríceps</li>
+                            <li><strong>B:</strong> Costas e bíceps</li>
+                            <li><strong>C:</strong> Pernas</li>
+                            <li><strong>D:</strong> Ombros e abdômen</li>
+                        </ul>
+                    </div>
+                    <div class="day">
+                        <h4 class="day-title">ABCDE (Avançado)</h4>
+                        <ul>
+                            <li><strong>A:</strong> Peito</li>
+                            <li><strong>B:</strong> Costas</li>
+                            <li><strong>C:</strong> Pernas</li>
+                            <li><strong>D:</strong> Bíceps e tríceps</li>
+                            <li><strong>E:</strong> Ombros e abdômen</li>
+                        </ul>
+                    </div>
+                    <div class="day">
+                        <h4 class="day-title">Push/Pull/Legs (PPL)</h4>
+                        <ul>
+                            <li><strong>Push:</strong> Peito, ombros, tríceps</li>
+                            <li><strong>Pull:</strong> Costas, bíceps, posterior</li>
+                            <li><strong>Legs:</strong> Pernas, glúteos, panturrilhas</li>
+                            <li>Ideal para treinar 6x por semana</li>
+                        </ul>
+                    </div>
+                    <div class="day">
+                        <h4 class="day-title">HIIT e Força</h4>
+                        <ul>
+                            <li><strong>HIIT:</strong> Circuitos de alta intensidade para queima de gordura</li>
+                            <li><strong>Força:</strong> Baixas repetições, altas cargas (ex: 5x5 em supino e agachamento)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CALCULADORA TMB -->
+        <section id="tmb" class="categoria">
+            <h2 class="section-title"><i class="fas fa-calculator"></i> Calculadora Metabólica</h2>
+            <form id="tmb-form" class="tmb-form">
+                <div class="form-group">
+                    <label><i class="fas fa-venus-mars"></i> Sexo:</label>
+                    <select id="sexo" required>
+                        <option value="">Selecione</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label><i class="fas fa-birthday-cake"></i> Idade (anos):</label>
+                    <input type="number" id="idade" min="15" max="100" required>
+                </div>
+                <div class="form-group">
+                    <label><i class="fas fa-weight"></i> Peso (kg):</label>
+                    <input type="number" id="peso" min="40" max="200" step="0.1" required>
+                </div>
+                <div class="form-group">
+                    <label><i class="fas fa-ruler-vertical"></i> Altura (cm):</label>
+                    <input type="number" id="altura" min="140" max="220" required>
+                </div>
+                <div class="form-group">
+                    <label><i class="fas fa-running"></i> Nível de Atividade:</label>
+                    <select id="atividade" required>
+                        <option value="">Selecione</option>
+                        <option value="1.2">Sedentário (pouco ou nenhum exercício)</option>
+                        <option value="1.375">Levemente ativo (exercício leve 1-3 dias/semana)</option>
+                        <option value="1.55">Moderadamente ativo (exercício moderado 3-5 dias/semana)</option>
+                        <option value="1.725">Muito ativo (exercício intenso 6-7 dias/semana)</option>
+                        <option value="1.9">Extremamente ativo (exercício intenso diário + trabalho físico)</option>
+                    </select>
+                </div>
+                <button type="submit"><i class="fas fa-calculator"></i> Calcular</button>
+            </form>
+            <div class="tmb-resultado" id="tmb-resultado">
+                <p>Preencha os dados acima para calcular sua taxa metabólica</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>VidaFit © 2025 - Projeto Acadêmico | Todos os direitos reservados</p>
+            <div class="footer-links">
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="#"><i class="fab fa-youtube"></i> YouTube</a>
+                <a href="#"><i class="fab fa-tiktok"></i> TikTok</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
