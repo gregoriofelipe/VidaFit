@@ -19,7 +19,6 @@ https://gregoriofelipe.github.io/VidaFit/
 
 1. Clone o repositório:
 git clone https://github.com/gregoriofelipe/vidafit.git
-cd saude-em-foco
 
 2. Abra o arquivo `index.html` no navegador.
 
